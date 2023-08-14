@@ -30,7 +30,9 @@
           >
           <ul class="list nav-list">
             <li class="nav-list_item">
-              <a class="link nav-list_link" href="./index.html">Studio</a>
+              <a class="link nav-list_link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="nav-list_item">
               <a class="link nav-list_link" href="./portfolio.html"
@@ -67,7 +69,9 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn hero-btn" type="button">Order Service</button>
+          <button class="btn hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -194,6 +198,23 @@
           </ul>
         </div>
       </section>
+
+      <!-- ! Customers -->
+
+      <section class="section customers">
+        <div class="container">
+          <h2 class="section-title">Customers</h2>
+          <ul class="list customers-list">
+            <li class="customers-item">
+              <a href="" class="customers-link">
+                <svg weight="104" height="56">
+                  <use href="./images/icons.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- ! Footer -->
@@ -209,5 +230,15 @@
         </p>
       </div>
     </footer>
+    <div class="overlay is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn modal-close-btn" data-modal-close>
+          <svg weight="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
