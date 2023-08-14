@@ -262,6 +262,7 @@ address {
   height: 112px;
   margin-bottom: 8px;
   background-color: var(--cloud);
+  border-radius: 4px;
 }
 .features-subtitle {
   color: var(--navyblue);
@@ -502,6 +503,7 @@ address {
 }
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 .footer-data {
   margin-right: 120px;
@@ -555,7 +557,7 @@ address {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--ocean);
+  background-color: #31d0aa;
 }
 
 /* ! Modal */
@@ -566,6 +568,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: opacity var(--transit), visibility var(--transit);
   background-color: var(--navyblue-modal);
 }
 
@@ -576,6 +579,7 @@ address {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
+  transition: transform var(--transit);
   border-radius: 4px;
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -599,7 +603,7 @@ address {
 }
 .modal-close-icon {
   fill: var(--navyblue);
-  transition: fill var(--transit), border var(--transit);
+  transition: fill var(--transit);
 }
 
 .modal-close-btn:hover .modal-close-icon,
