@@ -383,20 +383,17 @@ address {
   height: 100%;
   border: 1px solid var(--lightslate);
   border-radius: 4px;
-  transition: border-color var(--transit);
+  transition: border-color var(--transit), color var(--transit);
+  color: var(--lightslate);
 }
 .customers-icon {
-  fill: var(--lightslate);
-  transition: fill var(--transit);
+  fill: currentColor;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--ocean);
-}
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: var(--ocean);
+  color: var(--ocean);
 }
 
 /* ! Portfolio */
